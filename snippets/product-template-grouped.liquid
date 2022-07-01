@@ -435,7 +435,7 @@
                       <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
                       {% endif %}
 
-                      {% if enable_hot_stock and product.variants.size > 0 and product.variants.first.title != 'Default Title' %}
+                      {% if enable_hot_stock and product.variants.first.title != 'Default Title' %}
                       {% assign max_stock = section.settings.number_stock | plus: 0 %}
                       <div class="hot_stock" data-stock-hot data-value="{{max_stock}}">
                           {% if current_variant.inventory_management %}
