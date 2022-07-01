@@ -520,7 +520,7 @@
         {% if settings.dpl_customers_view_qv %}
         <div id="customers_view_qv" data-customer-view="{{ settings.number_view_qv }}">
             <i class="fa fa-eye" aria-hidden="true"></i>
-            <label>{{ settings.number_view_qv | split: ',' }}</label> {% render 'multilang' with settings.title_view_qv %}
+            <label>{{ settings.number_view_qv | slice: 0 }}</label> {% render 'multilang' with settings.title_view_qv %}
         </div>
         {% endif %}
         
