@@ -975,6 +975,7 @@
           },
           "1542772636356": {
             "type": "style_2",
+            "disabled": true,
             "settings": {
               "megamenu_items_2": "New In",
               "link_banner_first_style_2": "shopify:\/\/collections\/cosmopolis",
@@ -984,6 +985,7 @@
           },
           "1542783537505": {
             "type": "style_3",
+            "disabled": true,
             "settings": {
               "megamenu_items_3": "Collections",
               "link_banner_first_style_3": "",
@@ -995,6 +997,7 @@
           },
           "1542796773039": {
             "type": "style_4",
+            "disabled": true,
             "settings": {
               "megamenu_items_4": "Demo",
               "link_banner_first_style_4": ""
