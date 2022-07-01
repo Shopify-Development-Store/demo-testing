@@ -1,10 +1,11 @@
+hello
 {% render 'style-footer-default' %}
 {%- if section.settings.fb_like_code != blank -%}
 {%- assign url = section.settings.fb_like_code | split: 'src="' | last | split: 'nonce' | first | split: '"' | first -%}
 {%- endif -%}
 <footer class="site-footer footer-default" role="contentinfo" {% if section.settings.fb_like_code != blank %}data-loader-script="{{url}}"{% endif %}>
     {% if section.blocks.size > 0 or section.settings.footer_newsletter_enable or section.settings.footer_social_enable %}
-    <div class="footer-top">       
+    <div class="footer-top">
         <div class="container">
             <div class="row">
                 {% if section.blocks.size > 0 %}
@@ -28,9 +29,9 @@
                             {% render 'multilang' with block.settings.footer_title %}
                         </h3>
                         {% endif %}
-                        
+
                         {%- assign footer_linklist = block.settings.footer_linklist -%}
-                        
+
                         {% if linklists[footer_linklist].links.size > 0 %}
                         <ul>
                             {% for link in linklists[footer_linklist].links %}
@@ -47,7 +48,7 @@
                     </div>
                 </div>
                 {% endif %}
-                
+
                 {% if section.settings.footer_newsletter_enable or section.settings.footer_social_enable %}
                 <div class="col-12 col-md-12 col-lg-6 col-xl-5 footer-col-right">
                     {% if section.settings.footer_social_enable %}
@@ -57,13 +58,13 @@
                         {% render 'multilang' with section.settings.footer_social_title %}
                         </h3>
                         {% endif %}
-                        
+
                         <div class="groups-block">
-                        {% render 'social-media' %} 
+                        {% render 'social-media' %}
 
                         {% if section.settings.fb_like_code != blank %}
                         <div class="fb-like-code">
-                          {% render 'multilang' with section.settings.fb_like_code_text %}   
+                          {% render 'multilang' with section.settings.fb_like_code_text %}
                           {% assign first = section.settings.fb_like_code | split: '<scrip' | first %}
                           {% assign last = section.settings.fb_like_code | split: 'ript>' | last %}
                           {{first}} {{last}}
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                     {% endif %}
-                
+
                     {%if section.settings.footer_newsletter_enable %}
                     <div class="footer-newsletter">
                         {% if section.settings.footer_newsletter_title != blank %}
@@ -86,22 +87,22 @@
                                 {% render 'multilang' with section.settings.footer_newsletter_des %}
                             </p>
                         {% endif %}
-                        
+
                         {% render 'homepage-block-newsletter' %}
                     </div>
                     {% endif %}
                 </div>
                 {% endif %}
-            </div>    
+            </div>
         </div>
     </div>
     {% endif %}
-    
+
     {% if section.settings.footer_address_code != blank or section.settings.show_payment_icons %}
     <div class="footer-bottom">
         <div class="container">
             {% if settings.header_layout == 'vertical' %}
-            <div class="row{% if section.settings.footer_address_code != blank and section.settings.show_payment_icons %} justify-content-lg-between{% endif %}"> 
+            <div class="row{% if section.settings.footer_address_code != blank and section.settings.show_payment_icons %} justify-content-lg-between{% endif %}">
                 {% if section.settings.footer_address_code != blank %}
                 <div class="col-12{% if section.settings.show_payment_icons %} col-lg-6{% endif %}">
                 {% endif %}
@@ -128,7 +129,7 @@
             {% endif %}
 
             {% endif %}
-            
+
             {% if section.settings.show_payment_icons %}
             {% assign payment_string = 'visa,visa_electron,master,maestro,american_express,solo,amazon_payments,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,paypal,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,stripe,sage,wallet,western' %}
             {% assign methods = payment_string | split: ',' %}
@@ -137,7 +138,7 @@
             <div class="col-12{% if section.settings.footer_address_code != blank %} col-lg-6{% endif %}">
             {% endif %}
 
-            <ul class="payment-methods">  
+            <ul class="payment-methods">
                 {% for method in methods %}
                 {%- assign display_current_method = method | prepend: 'payment_display_' -%}
                 {% if section.settings[display_current_method] %}
@@ -168,7 +169,7 @@
   {
     "name": "Footer Default",
   "max_blocks": 4,
-  "blocks": [   
+  "blocks": [
     {
         "type": "footer_link",
         "name": "Footer Link",
@@ -183,7 +184,7 @@
             "id": "footer_linklist",
             "label": "Footer Link",
             "default": "footer"
-          }     
+          }
         ]
       }
   ],
@@ -293,7 +294,7 @@
         "type": "image_picker",
         "id": "bg-footer-img",
        "label": "Upload a new image"
-      },      
+      },
       {
         "type": "header",
         "content": "Text Color"
@@ -303,7 +304,7 @@
         "id": "footer_title_color",
         "label": "Footer Title",
         "default": "#000000"
-      },    
+      },
       {
         "type": "color",
         "id": "footer_link_color",
@@ -322,7 +323,7 @@
         "label": "Footer Line Color",
         "default": "#282828"
       },
-      
+
     {
         "type": "header",
         "content": "Newsletter"
@@ -337,12 +338,12 @@
         "type": "text",
         "id": "footer_newsletter_title",
         "label": "Footer Newsletter Title"
-      },   
+      },
         {
             "type": "textarea",
             "id": "footer_newsletter_des",
             "label": "Footer Newsletter Descriptions"
-        },   
+        },
     {
         "type": "color",
         "id": "bg_newsletter_color",
@@ -412,7 +413,7 @@
         "label": "Social Icons Background Color",
         "default": "#fff"
       },
-   
+
       {
         "type": "header",
         "content": "Footer Address"
@@ -434,7 +435,7 @@
         "id": "footer_address_code",
         "label": "Footer Address Code"
       },
-      
+
       {
         "type": "header",
         "content": "Footer Payment"
@@ -594,7 +595,7 @@
         "id": "icon_maestro",
         "label": "Maestro image"
       },
-     
+
       {
         "type": "image_picker",
         "id": "icon_solo",
@@ -690,6 +691,6 @@
           "id": "icon_western",
           "label": "Western Union image"
       }
-    ] 
+    ]
   }
 {% endschema %}
