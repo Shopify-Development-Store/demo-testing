@@ -84,6 +84,7 @@
               
               <div class="header-links">
                 {% if settings.enable_wishlist %}
+                {{pages['wish-list'].url}}
                 <a class="wishlist" href="{{ pages['wish-list'].url }}" title="{{ 'wishlist.general.my_wishlist' | t }}">
                   {% render 'icon-heart-2' %}
                   <span class="wishlist-text text-hover"{% if settings.enable_multilang %} data-translate="wishlist.general.my_wishlist"{% endif %}>
