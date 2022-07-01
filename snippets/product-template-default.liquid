@@ -594,7 +594,7 @@
                       <strong class="icon-tags" {% if settings.enable_multilang %}data-translate="blogs.article.tags"{%endif%}>{{ 'blogs.article.tags' | t }}:</strong>
                       {% for tag in product.tags %}
                       <span class="separator">/</span>
-                      <a href="/collections/all/?constraint={{ tag | handle }}" rel="tag">
+                      <a class="separate" href="/collections/all/?constraint={{ tag | handle }}" rel="tag">
                         {% if settings.enable_multilang %}
                         <span class="lang1">{{ tag | split: '|' | first }}</span>
                         <span class="lang2">{{ tag | split: '|' | last }}</span>
