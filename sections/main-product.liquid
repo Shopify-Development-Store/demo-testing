@@ -12,7 +12,7 @@ for option in product.options_with_values
     endif
 endfor
 %}
-
+{{enable_hot_stock}}
 {% if template.suffix == 'full-width' %}
   {% render 'product-full-width', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
 {% elsif template.suffix == 'gallery' %}
