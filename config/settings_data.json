@@ -1544,7 +1544,7 @@
           "1548643650260": {
             "type": "image",
             "settings": {
-              "product": "dempus-lortis-cosmo-sapiendo",
+              "product": "",
               "from_ago": "Blackburn, UK",
               "time_ago": "20 minutes"
             }
@@ -1552,7 +1552,7 @@
           "1548643708120": {
             "type": "image",
             "settings": {
-              "product": "dempus-lortis-cosmo-sapiendo-1",
+              "product": "",
               "from_ago": "Washington, US",
               "time_ago": "30 minutes"
             }
@@ -1560,7 +1560,7 @@
           "1548643726643": {
             "type": "image",
             "settings": {
-              "product": "dempus-lortis-cosmo-sapiendo-2",
+              "product": "",
               "from_ago": "Blumenau, Brazil",
               "time_ago": "10 minutes"
             }
@@ -1568,7 +1568,7 @@
           "1548643747526": {
             "type": "image",
             "settings": {
-              "product": "dempus-an-lortis-tempus-sapiendos",
+              "product": "",
               "from_ago": "Bauru, Brazil",
               "time_ago": "35 minutes"
             }
@@ -1584,7 +1584,7 @@
           "display_someone-purchased": true,
           "display_someone-purchased_mb": true,
           "show_someone-purchased": "right",
-          "someone_speed": "7000",
+          "someone_speed": "60000",
           "text": "Someone recently bought a",
           "time_location_text": "[time] minutes ago, from [location]"
         }
