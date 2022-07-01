@@ -1919,7 +1919,7 @@
           "margin_bottom_mb": 25,
           "margin_bottom_tab": 35,
           "margin_bottom": 35,
-          "spotlight_block_title": "#Featured On Ella",
+          "spotlight_block_title": "Featured On Ella",
           "spotlight_block_des": "",
           "title_style": "style_1"
         }
@@ -1983,10 +1983,10 @@
           "margin_bottom_mb": 0,
           "margin_bottom_tab": 0,
           "margin_bottom": 0,
-          "display_brand_border": true,
+          "display_brand_border": false,
           "display_bg_banner": false,
           "bg_color_banner": "#f5f5f5",
-          "brand_title": "",
+          "brand_title": "Follow Us on:",
           "brand_des": "",
           "brands_view_all": "",
           "brands_view_all_link": "",
