@@ -436,7 +436,6 @@
                       {% endif %}
 
                     {% assign max_stock = section.settings.number_stock | plus: 0 %}
-                    {{enable_hot_stock}}
                       {% if enable_hot_stock and product.variants.size > 0 and product.variants.first.title != 'Default Title' %}
                       {% assign max_stock = section.settings.number_stock | plus: 0 %}
                       <div class="hot_stock" data-stock-hot data-value="{{max_stock}}">
