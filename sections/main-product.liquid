@@ -18,6 +18,7 @@ endfor
 {% elsif template.suffix == 'gallery' %}
   {% render 'product-gallery', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
 {% elsif template.suffix == 'grouped' %}
+1
 {{enable_hot_stock}}
   {% render 'product-grouped', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
 {% elsif template.suffix == 'skin-1' %}
@@ -32,6 +33,7 @@ endfor
   {% if settings.product_layout == "default" %} 
     {% render 'product-default', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
   {% elsif settings.product_layout == "grouped" %}
+2
 {{enable_hot_stock}}
     {% render 'product-grouped', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
   {% elsif settings.product_layout == "slider" %}
