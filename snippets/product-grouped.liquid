@@ -8,11 +8,10 @@
     {% else %}
     {% render 'breadcrumb' %}
     {% endif %}
-       {{enable_hot_stock}}
 
     <div class="halo-product-content">
       <div class="row pro-page">
-        {% render 'product-template-grouped' %}
+        {% render 'product-template-grouped', enable_hot_stock: enable_hot_stock %}
       </div>
     </div>   
   </div>
