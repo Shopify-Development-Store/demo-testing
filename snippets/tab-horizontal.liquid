@@ -76,6 +76,7 @@
         {% if section.settings.display_product_detail_description %}
 
         {% assign des = product.description %}
+      {{product.description}}
         {% if des contains '[countdown]' or product.description contains '[custom tab]' %}
         {% assign des = product.description | split:'[/countdown]</p>' | last %}
         {% assign des = des | split:'[custom tab]' | first | split:'<iframe' | first %}
