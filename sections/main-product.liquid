@@ -32,6 +32,7 @@ endfor
   {% if settings.product_layout == "default" %} 
     {% render 'product-default', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
   {% elsif settings.product_layout == "grouped" %}
+{{enable_hot_stock}}
     {% render 'product-grouped', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
   {% elsif settings.product_layout == "slider" %}
     {% render 'product-slider', product: product, enable_compare_color: enable_compare_color, show_compare_color: show_compare_color, enable_hot_stock: enable_hot_stock, option_color_swatch: option_color_swatch %}
