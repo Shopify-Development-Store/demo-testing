@@ -209,6 +209,7 @@
     },
     "recently-view": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "display_recently_viewed_products": true,
         "recently_viewed_products_title": "Recently Viewed Products",
