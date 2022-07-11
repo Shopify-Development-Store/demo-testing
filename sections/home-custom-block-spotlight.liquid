@@ -101,8 +101,10 @@
             {% endif %}
         </div>
       {% endif %}
+      
       {% if section.settings.layout_style == 'layout_style_2' %}
       <style>
+        {{block.id}}
           #block-{{block.id}} {
             background-color: {{ block.settings.bg_color_column }};
           }
