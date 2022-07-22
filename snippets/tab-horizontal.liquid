@@ -117,7 +117,7 @@
             </div>
         {% endif %}
 
-        {% if section.settings.display_custom_tab_1 %}
+        {% if section.settings.display_custom_tab_1 and product.metafields.c_f.custom_tab1 != blank%}
             <div class="tab-title">
                 <a href="#" data-tapTop data-target="#collapse-tab3" class="tab-links {% if tab3_active%}active{% endif %}">
                     {% render 'multilang' with section.settings.custom_tab_title_1 %}
