@@ -1611,6 +1611,7 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
+              "image_slide": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
               "style_content": "style_1",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -1643,7 +1644,7 @@
               "bg_button_mb": "#232323",
               "border_button_mb": "#232323",
               "color_button_mb": "#ffffff",
-              "lb_product_1": "",
+              "lb_product_1": "vimla-womens-beige-crepe-silk-uniform-saree-with-blouse-1217-beige",
               "top_position_1": "10",
               "left_position_1": "10",
               "dots_color_1": "#ffffff",
@@ -1670,7 +1671,7 @@
         "settings": {
           "layout": "full",
           "bg_color": "",
-          "widget_title": "",
+          "widget_title": "hhj",
           "title_style": "style_1",
           "margin_bottom_mb": 20,
           "margin_bottom_tab": 20,
