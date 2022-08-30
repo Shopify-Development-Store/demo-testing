@@ -132,7 +132,6 @@
       {%- assign home_class = 'layout_home_18' -%}
     {% endif %} 
 
-{{ routes | json }}
 <body data-url-lang="{{ routes.cart_url }}" id="{{ page_title | handle }}" class="{{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in{% endif %}
 {% if template.suffix == 'landing' %} template-index{% else %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% endif %} {{settings.style_product_grid}}{% if settings.layout_style == 'layout_style_1' %} layout_default{% else %} {{settings.layout_style}}{% endif %} {{ home_class }}
 {% unless settings.enable_before_you_leave_mb %} before-you-leave-disableMobile{% endunless %}{% if settings.product_layout == 'skin_1' %} product_layout_skin_1{% elsif settings.product_layout == 'supermarket' %} product_layout_supermarket{% endif %}{% if settings.layout_body == 'custom_width' %} custom_width{% endif %}{% if settings.enable_button_add_to_cart_color %} enable_button_add_to_cart_color{% endif %}{% if settings.enable_hover_video_product_items %} enable_hover_video_product_items{% endif %}
