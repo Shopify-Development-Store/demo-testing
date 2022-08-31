@@ -6,17 +6,17 @@
             
             {% case section.blocks.size %}
                 {% when 1 %}
-                  {%- assign column_size = 'col-12 one-block' -%}
+                {%- assign column_size = 'col-12 one-block' -%}
                 {% when 2 %}
-                  {%- assign column_size = 'col-12 col-sm-6 two-blocks' -%}
+                {%- assign column_size = 'col-12 col-sm-6 two-blocks' -%}
                 {% when 3 %}
-                  {%- assign column_size = 'col-6 col-sm-4 three-blocks' -%}
+                    {%- assign column_size = 'col-6 col-sm-4 three-blocks' -%}
                 {% when 4 %}
-                  {%- assign column_size = 'col-6 four-blocks' -%}
+                    {%- assign column_size = 'col-6 four-blocks' -%}
                 {% when 5 %}
-                  {%- assign column_size = 'col-6 col-md-4 five-blocks' -%}
+                    {%- assign column_size = 'col-6 col-md-4 five-blocks' -%}
                 {% when 6 %}
-                  {%- assign column_size = 'col-6 col-md-4 six-blocks' -%}
+                    {%- assign column_size = 'col-6 col-md-4 six-blocks' -%}
             {% endcase %}
                 
             <div class="item {{ column_size }}">
