@@ -237,10 +237,26 @@
         "btn_link_2": "shopify:\/\/collections\/all",
         "btn_text_2": "Shop the Collections"
       }
+    },
+    "judgeme_section_review_widget_bf31": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_8909a1cb": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_8909a1cb"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
+    "judgeme_section_review_widget_bf31",
     "recently-view",
     "404-page-main"
   ]

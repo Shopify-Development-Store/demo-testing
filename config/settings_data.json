@@ -2907,7 +2907,15 @@
       "1541414200176",
       "1541559977022",
       "1541566560488"
-    ]
+    ],
+    "blocks": {
+      "judgeme_core_844f6229": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
